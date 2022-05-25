@@ -6,6 +6,7 @@ import Addevent from './Components/Addevent';
 import Searchevent from './Components/Searchevent';
 import Header from './Components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Viewevent from './Components/Viewevent';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Addevent/>}/>
         <Route path="/search" exact element={<Searchevent/>}/>
-        <Route path="/view" exact element={<Addevent/>}/>
+        <Route path="/view" exact element={<Viewevent/>}/>
       </Routes>
       </BrowserRouter>
     </div>
